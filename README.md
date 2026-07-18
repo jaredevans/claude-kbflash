@@ -74,7 +74,7 @@ Two situations start the backlight signal:
 
 Mechanics: `kb-start.sh` reads the notification JSON from stdin and greps the message to classify it — idle launches `kbflash -w 2` (2 breaths, then off until killed), permission launches `kbflash 0` (breathe until killed). Either way the process runs detached with `nohup`, records its pid in `~/.claude/claude-kbflash/kbflash.pid`, and the script exits well inside the hook timeout. If a live pid is already recorded, it's a no-op — repeat notifications never stack a second breather. If the binary is missing, the script builds it first (errors go to `~/.claude/claude-kbflash/hook.log`). `kb-stop.sh` kills the recorded pid and removes the pidfile; the dying `kbflash` restores your original brightness and turns auto-brightness back on. When nothing is breathing, `kb-stop.sh` is a no-op, so the `PostToolUse` binding costs nothing during normal work.
 
-Hooks never fail the session: every exit path in both scripts is `exit 0`, matching the "hooks are tiny clients that never break Claude" rule from govee-claude.
+Hooks never fail the session: every exit path in both scripts is `exit 0`.
 
 ### Runtime files
 
