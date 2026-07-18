@@ -58,7 +58,7 @@ Install:
 /reload-plugins
 ```
 
-That registers the hooks below (architecture borrowed from [govee-claude](https://github.com/jaredevans/govee-claude), minus the daemon — the keyboard is local, so no socket/state machine is needed):
+That registers the hooks below:
 
 | Hook | Script | Effect |
 |------|--------|--------|
