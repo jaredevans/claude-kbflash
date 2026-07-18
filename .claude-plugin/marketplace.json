@@ -1,0 +1,13 @@
+{
+  "name": "claude-kbflash-marketplace",
+  "owner": {
+    "name": "jared"
+  },
+  "plugins": [
+    {
+      "name": "claude-kbflash",
+      "source": "./",
+      "description": "Breathes the MacBook keyboard backlight when Claude Code is waiting for your input; stops and restores brightness when you type."
+    }
+  ]
+}

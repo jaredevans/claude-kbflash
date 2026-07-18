@@ -1,0 +1,5 @@
+{
+  "name": "claude-kbflash",
+  "version": "0.1.0",
+  "description": "Breathes the MacBook keyboard backlight when Claude Code is waiting for your input; stops and restores brightness when you type."
+}

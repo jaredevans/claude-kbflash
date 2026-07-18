@@ -1,0 +1,5 @@
+# compiled binaries (kb-start.sh rebuilds kbflash on demand)
+kbflash
+
+.claude/
+.DS_Store
